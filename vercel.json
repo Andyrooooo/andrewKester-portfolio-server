@@ -1,23 +1,33 @@
 {
     "version": 2,
+
     "builds": [
         {
-            "src": "./api/get.js",
+            "src": "/api/index.js",
             "use": "@vercel/node"
         },
         {
-            "src": "./api/send.js",
+            "src": "/api/get.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "/api/send.js",
             "use": "@vercel/node"
         }
     ],
+    
     "routes": [
         {
+            "src": "/",
+            "dest": "/api/index.js"
+        },
+        {
             "src": "/send",
-            "dest": "/api/send"
+            "dest": "/api/send.js"
         },
         {
             "src": "/get",
-            "dest": "/api/get"
+            "dest": "/api/get.js"
         }
     ]
 }
