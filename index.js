@@ -44,7 +44,7 @@ app.post('/send', (req, res) => {
     
 })
 
-app.get('/', (req, res) => {
+app.get('/get', (req, res) => {
     res.send({"message": "hello World"});
     console.log('working')
     });

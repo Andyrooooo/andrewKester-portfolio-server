@@ -8,10 +8,6 @@
     ],
     "routes": [
         {
-            "src": "/send",
-            "dest": "/send"
-        },
-        {
             "src": "/(.*)",
             "dest": "/"
         }

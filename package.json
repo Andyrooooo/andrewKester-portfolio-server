@@ -3,7 +3,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "server": "nodemon ./src/index.js"
+    "server": "nodemon ./index.js"
   },
   "type": "module",
   "dependencies": {
